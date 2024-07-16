@@ -35,7 +35,7 @@ class _VerificationEmailScreenState extends State<VerificationEmailScreen> {
 
     try {
       final response = await http.post(
-        Uri.parse('http://10.0.2.2:5000/api/verify_email'),
+        Uri.parse('http://194.31.53.102:21128/api/verify_email'),
         headers: <String, String>{
           'Content-Type': 'application/json; charset=UTF-8',
         },
