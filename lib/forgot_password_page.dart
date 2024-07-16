@@ -8,7 +8,7 @@ class ForgotPasswordScreen extends StatelessWidget {
 
   Future<void> resetPassword(BuildContext context) async {
     final url = Uri.parse(
-        'http://10.0.2.2:5000/api/reset_password'); // Ganti dengan URL API reset password Anda
+        'http://194.31.53.102:21128/reset_password'); // Ganti dengan URL API reset password Anda
     final response = await http.post(
       url,
       headers: <String, String>{
@@ -91,7 +91,7 @@ class ForgotPasswordScreen extends StatelessWidget {
 
   Future<void> changePassword(BuildContext context) async {
     final url = Uri.parse(
-        'http://10.0.2.2:5000/api/update_password'); // Ganti dengan URL API update password Anda
+        'http://194.31.53.102:21128/update_password'); // Ganti dengan URL API update password Anda
     final response = await http.post(
       url,
       headers: <String, String>{
